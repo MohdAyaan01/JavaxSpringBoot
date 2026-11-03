@@ -131,6 +131,131 @@ public class Test {
         //Binary
         int ddd = 2;
         System.out.println(Integer.toBinaryString(ddd));
+        int aaaa = 5;
+        int bbbb = 3;
+        //AND Operators
+        System.out.println("AND Operations");
+        System.out.println("5 & 3 = " + (aaaa&bbbb));
+        System.out.println("Binary: "+Integer.toBinaryString(aaaa & bbbb));
+
+        //nOR Operators
+        System.out.println("OR Operations");
+        System.out.println("5 | 3 = " + (aaaa|bbbb));
+        System.out.println("Binary: "+Integer.toBinaryString(aaaa | bbbb));
+
+        //XOR Operators
+        System.out.println("XOR Operations");
+        System.out.println("5 ^ 3 = " + (aaaa^bbbb));
+        System.out.println("Binary: "+Integer.toBinaryString(aaaa ^ bbbb));
+
+        //NOT Operators
+        System.out.println("NOT Operations");
+        System.out.println("~5 = " + (~aaaa));
+        System.out.println("Binary: "+Integer.toBinaryString((~aaaa)));
+
+        //Left Shift
+        System.out.println("AND Operations");
+        System.out.println("5 << 1 = " + (aaaa<<1));
+        System.out.println("Binary: "+Integer.toBinaryString(aaaa << 1));
+
+        //Logical Operators
+        System.out.println(1 != 2 && 1 < 2);
+        //True && True
+        //And
+        boolean isSunny = true;
+        boolean isWarm = true;
+        boolean isGoodBeach = isSunny && isWarm;
+        System.out.println("Is it a good Beach? " + isGoodBeach);
+
+        //OR
+        boolean isRaining = false;
+        boolean isSnowing = true;
+        boolean isBadWeather = isRaining || isSnowing;
+        System.out.println("is The Weather Bad" + isBadWeather);
+
+        //NOT Operators
+        boolean Not = false;
+        System.out.println(!Not);
+
+        //Conditional Statement
+        boolean isSunnny = true;
+        boolean isWarmm = true;
+
+        if(isSunnny && isWarmm){
+            System.out.println("Beach Day");
+        }else {
+            System.out.println("Stay At Home");
+        }
+        //Switch
+        int day = 3;
+        String DayName;
+        switch (day){
+            case 1 :
+                DayName = "Monday";
+                break;
+            case 2 :
+                DayName = "Tuesday";
+                break;
+            case 3 :
+                DayName = "Wendesday";
+                break;
+
+            case 4 :
+                DayName = "Thursday";
+                break;
+
+            case 5 :
+                DayName = "Friday";
+                break;
+
+            case 6 :
+                DayName = "Satday";
+                break;
+
+            case 7 :
+                DayName = "Sunday";
+                break;
+            default:
+               DayName= "Invalid Data";
+        }
+        System.out.println(DayName);
+        //Turnary
+        //result = (condition) ? valuesIfTrue : valuesIfFalse;
+        int turnary = 1;
+        boolean isEven = turnary%2 == 0? true : false;
+        //Loops
+        //while
+        /*
+        int i=0;
+        while (i <=100){
+            System.out.println("hllo");
+            i++;
+        }*/
+        /*for(int i=0; i<=100; i++){
+            System.out.println("Hello");
+        }*/
+        /*
+        int i=1;
+        while (i<=100){
+            System.out.println("Hello");
+        }
+        do {
+            System.out.println("Hello");
+            i++;
+        } while (i<=100);
+        */
+        //Arrays
+        //Same Type
+        //Fixed Size
+        int[] a = new int[5];
+        a[4] = 55;
+        System.out.println(a);
+        for(int i=0; i<=5; i++){
+            System.out.println(a[i]);
+        }
+        for(int i:a){
+            System.out.println(i);
+        }
         /*System.out.println("Widening Conversion Implicit");
         System.out.println("------");
         byte byteValue = 10;//1 bytes // cup
