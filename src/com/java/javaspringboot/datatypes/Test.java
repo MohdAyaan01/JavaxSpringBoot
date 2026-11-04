@@ -2,7 +2,7 @@ package com.java.javaspringboot.datatypes;
 
 public class Test {
     public static void main(String[] args) {
-
+        /*
         System.out.println("Byte Range");
         System.out.println("----------");
         byte A = 127;
@@ -247,6 +247,7 @@ public class Test {
         //Arrays
         //Same Type
         //Fixed Size
+        /*
         int[] a = new int[5];
         a[4] = 55;
         System.out.println(a);
@@ -255,58 +256,10 @@ public class Test {
         }
         for(int i:a){
             System.out.println(i);
-        }
-        /*System.out.println("Widening Conversion Implicit");
-        System.out.println("------");
-        byte byteValue = 10;//1 bytes // cup
-        short shortValue = byteValue;//2 bytes //glass
-        int intValue = shortValue;//4 bytes //jug
-        long longValue = intValue;//8 bytes //bucket
-        float FloatValue = longValue;//4 bytes
-        double doubleValue = FloatValue;//8 bytes
-        System.out.println("int:" + intValue);
-        System.out.println("long:" + longValue);
-        System.out.println("float" + FloatValue);
-        System.out.println("double" + doubleValue);
-        System.out.println();*/
-
-        //Narrowing Conversion Its Opposite of widening
-        /*
-        System.out.println("Narrowing Conversion");
-        System.out.println("----------");
-        double doubleValue2 = 123.456;
-        float FloatValue2 = (float) doubleValue2; //Narrowing Conversion From Double To Float
-        long LongValue2 = (long) FloatValue2;//Narrowing Conversion From Float To Long
-        int IntValue2 = (int) LongValue2;// Narrowing Conversion From Long To Int
-        System.out.println("Double" + doubleValue2);
-        System.out.println("Float" + FloatValue2);
-        System.out.println("Long" + LongValue2);
-        System.out.println("Int" + IntValue2);
-        System.out.println();
-         */
-        //JVM --> Heap Memory(String Pool)
-        //Test test = new Test();
-        //Test test2 = new Test();
-        /*int a = 1;//It Will Store In Stack
-        String str1 = "Hello";//Its Store In Heap(String pool)
-        String Str2 = "Hello";
-        String Str3 = new String("Hello");
-        System.out.println(str1 == Str2);//True (Same Refrence In Pool)
-        System.out.println(str1 == Str3);//False (Different Objects)
-        System.out.println(str1.equals(Str3));//True(Same Content)*/
-
-        /*String a = "hello";
-        //a = a.toUpperCase();//ReInitialize
-        String b = a.toUpperCase();
-        System.out.println(a);
-        System.out.println(b);*/
-        /*
-        String Text = "Hello World";
-        System.out.println(Text.length());
-        System.out.println(Text.charAt(0));
-        System.out.println(Text.substring(0,4));
-        System.out.println(Text.contains("World"));
-        System.out.println(Text.replace("World","Java"));*/
-
+        }*/
+        //OOPS
+        Car car = new Car("Green");
+        car.SetSpeed(-12);
+        car.SetSpeed(12);
     }
 }
