@@ -258,8 +258,87 @@ public class Test {
             System.out.println(i);
         }*/
         //OOPS
-        Car car = new Car("Green");
-        car.SetSpeed(-12);
-        car.SetSpeed(12);
+        //Car car = new Car("Green");
+        //car.SetSpeed(-12);
+        //car.SetSpeed(12);
+        //SmartPhone smartPhone = new SmartPhone();
+        //smartPhone.Capture();
+        //smartPhone.TurnOn()
+        Dog dog = new Dog();
+        dog.SayHello();
+        dog.sleep();
+    }
+}
+//Inheritance - Multi Inheritance Not Supported In Java
+/*
+class Camera{
+    void Capture(){
+        System.out.println("Photo Clicking....");
+    }
+    void TurnOn(){
+        System.out.println("Turning On....");
+    }
+}
+class MusicPlayer{
+    void PlayMusic(){
+        System.out.println("Music Playing....");
+    }
+}
+class Phone{
+    void Call(String Number){
+        System.out.println("Calling...." + Number);
+    }
+    void TurnOn(){
+        System.out.println("Turning On....");
+    }
+}
+class SmartPhone extends Camera{
+
+}*/
+
+abstract class Animal{
+    String color;
+    boolean hasSuper;
+    public Animal(){
+        hasSuper = false;
+    }
+    abstract void SayHello();
+    abstract void SayBye();
+
+    void sleep(){
+        System.out.println("zzz...");
+    }
+}
+class Dog extends Animal{
+    @Override
+    void SayHello() {
+        System.out.println("Woof...");
+
+    }
+
+    @Override
+    void SayBye() {
+        System.out.println("Woof...");
+    }
+}
+
+interface Mobile{
+    static final int NumberOfBatteries=1;
+    void MakeCall();
+}
+
+interface MusicPlayer{
+    void Music();
+}
+class SmartPhone implements Mobile,MusicPlayer{
+
+    @Override
+    public void MakeCall() {
+        System.out.println("Making Call....");
+    }
+
+    @Override
+    public void Music() {
+        System.out.println("Listening Music....");
     }
 }
