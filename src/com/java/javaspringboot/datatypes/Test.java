@@ -1,7 +1,7 @@
 package com.java.javaspringboot.datatypes;
 
-public class Test {
-    public static void main(String[] args) {
+//public class Test {
+  //  public static void main(String[] args) {
         /*
         System.out.println("Byte Range");
         System.out.println("----------");
@@ -264,11 +264,12 @@ public class Test {
         //SmartPhone smartPhone = new SmartPhone();
         //smartPhone.Capture();
         //smartPhone.TurnOn()
-        Dog dog = new Dog();
-        dog.SayHello();
-        dog.sleep();
-    }
-}
+        //Dog dog = new Dog();
+        //dog.SayHello();
+        //dog.sleep();
+  //  }
+//}
+
 //Inheritance - Multi Inheritance Not Supported In Java
 /*
 class Camera{
@@ -295,7 +296,7 @@ class Phone{
 class SmartPhone extends Camera{
 
 }*/
-
+/*
 abstract class Animal{
     String color;
     boolean hasSuper;
@@ -340,5 +341,175 @@ class SmartPhone implements Mobile,MusicPlayer{
     @Override
     public void Music() {
         System.out.println("Listening Music....");
+    }
+}*/
+
+//Method OverLoading
+/*
+class Calculator{
+    int add(int a, int b){
+        return a+b;
+    }
+    int add(int a, int b, int c){
+        return a+b+c;
+    }
+}
+public class Test{
+    public static void main(String[] args){
+        Calculator calc = new Calculator();
+        System.out.println(calc.add(2,3));
+        System.out.println(calc.add(1,2,3));
+    }
+}*/
+//Method Overloading With Different Parameters
+/*
+class Printer{
+    void Print(String s){
+        System.out.println("String: " +s);
+    }
+    void Print(int num){
+        System.out.println("Integer: " +num);
+    }
+    void Print(double d){
+        System.out.println("Double: " +d);
+    }
+}
+public class Test{
+    public static void main(String[] args){
+        Printer printer = new Printer();
+        printer.Print("Hello World!...");
+        printer.Print(123);
+        printer.Print(3.14);
+    }
+}
+*/
+
+//Different Orders Of Parameter
+/*
+class Display{
+    void Print(String s, int num){
+        System.out.println("String: " +s+ ", Integer:" + num);
+    }
+    void Print(int num, String s){
+        System.out.println("Integer: " + num + ", String:" + s);
+    }
+}
+public class Test{
+    public static void main(String[] args){
+       Display display = new Display();
+       display.Print("Java",1);
+       display.Print(2, "JavaScript");
+    }
+}*/
+//RunTime Polymorphism
+/*
+class Animal{
+    void Sound(){
+        System.out.println("Animal Makes A Sound");
+    }
+}
+class Dog extends Animal{
+    void Sound(){
+        System.out.println("Woof Woof...");
+    }
+}
+class Cat extends Animal{
+    void Sound(){
+        System.out.println("Meow Meow");
+    }
+}
+public class Test {
+    public static void main(String[] args){
+        Animal animal = new Dog();
+        Animal animal1 = new Cat();
+        animal.Sound();
+        animal1.Sound();
+    }
+}*/
+/*
+public class Test {
+    public static void main(String[] args){
+       Animal animal = new Dog();
+       Animal animal1 = new Cat();
+       animal.SayHello();
+       animal1.SayBye();
+       animal.sleep();
+       animal1.sleep();
+    }
+}
+abstract class Animal{
+    public abstract void SayHello();
+    public abstract void SayBye();
+    public void sleep(){
+        System.out.println("zzzzzzzz....");
+    }
+}
+class Dog extends Animal{
+
+    @Override
+    public void SayHello() {
+        System.out.println("Wooof");
+    }
+
+    @Override
+    public void SayBye() {
+        System.out.println("Woofff");
+    }
+}
+class Cat extends Animal{
+
+    @Override
+    public void SayHello() {
+        System.out.println("Meowwww");
+    }
+
+    @Override
+    public void SayBye() {
+        System.out.println("Meowow");
+    }
+}*/
+/*
+interface Payment{
+    void Play(int amount);
+}
+class UPIPayment implements Payment{
+    @Override
+    public void Play(int amount){
+        System.out.println("Paid" + amount + "Using UPI");
+    }
+}
+class CardPayment implements Payment{
+    @Override
+    public void Play(int amount) {
+        System.out.println("Paid" + amount + "Using Card");
+    }
+}
+public class Test {
+    public static void main(String[] args){
+        Payment P1 = new UPIPayment();
+        P1.Play(500);
+        Payment P2 = new CardPayment();
+        P2.Play(1000);
+    }
+}*/
+//How Does This Work
+//1-Payment Interface declares the pay() method
+//2-Payment p1= new UPIPayment() creates a UPI Payment object referenced through interface
+//3-Java calls the correct implementation at runtime this called runtime polymorphism
+
+public class Test {
+    int Speed;
+    private String Color;
+
+    public Test(String Color){
+        this.Color = Color;
+    }
+    public void TestSpeed(int speed){
+        if(speed < 0){
+            System.out.println("Not Possible");
+        }else{
+            this.Speed = speed;
+            System.out.println("Driving At " + speed + "!");
+        }
     }
 }

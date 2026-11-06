@@ -1,6 +1,8 @@
 package com.java.javaspringboot.datatypes;
 
-public class Car {
+import com.java.javaspringboot.controlflow.Vehicle;
+
+public class Car extends Vehicle {
     int speed;
     private String Color;
     public Car(String color){
