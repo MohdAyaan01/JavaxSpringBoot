@@ -384,6 +384,8 @@ public class Test{
 }
 */
 
+import com.java.javaspringboot.controlflow.Vehicle;
+
 //Different Orders Of Parameter
 /*
 class Display{
@@ -496,7 +498,7 @@ public class Test {
 //1-Payment Interface declares the pay() method
 //2-Payment p1= new UPIPayment() creates a UPI Payment object referenced through interface
 //3-Java calls the correct implementation at runtime this called runtime polymorphism
-
+/*
 public class Test {
     int Speed;
     private String Color;
@@ -511,5 +513,12 @@ public class Test {
             this.Speed = speed;
             System.out.println("Driving At " + speed + "!");
         }
+    }
+}*/
+public class Test {
+    public static void main(String[] args){
+        Vehicle vehicle = new Vehicle();
+        System.out.println("Hello World");
+        System.out.println(Thread.currentThread().getName());
     }
 }
