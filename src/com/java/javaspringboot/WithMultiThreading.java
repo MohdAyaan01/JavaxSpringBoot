@@ -2,7 +2,7 @@ package com.java.javaspringboot;
 
 public class WithMultiThreading {
     public static void main(String[] args) throws InterruptedException {
-        long StartTime = System.currentTimeMillis();
+        /*long StartTime = System.currentTimeMillis();
         NumberCounter thread1 = new NumberCounter();
         SumCalculator sumCalculator = new SumCalculator();
         Thread thread2 = new Thread(sumCalculator);
@@ -13,6 +13,19 @@ public class WithMultiThreading {
 
         thread1.join();
         thread2.join();
-        System.out.println("Time Taken: " +(System.currentTimeMillis()-StartTime) + "ms");
+        System.out.println("Time Taken: " +(System.currentTimeMillis()-StartTime) + "ms");*/
+
+        long StartTime = System.currentTimeMillis();
+        NumberCounter Thread1 = new NumberCounter();
+        SumCalculator sumCalculator = new SumCalculator();
+        Thread Thread2 = new Thread(sumCalculator);
+
+        Thread1.start();
+        Thread2.start();
+
+        Thread1.join();
+        Thread2.join();
+
+        System.out.println("Time Taken: " +(System.currentTimeMillis()-StartTime) + "Ms");
     }
 }

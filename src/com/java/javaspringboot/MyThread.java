@@ -11,16 +11,16 @@ public class MyThread extends Thread{
             counter.Increment();
         }
     }
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args)throws InterruptedException{
         Counter counter = new Counter();
-        MyThread t1 = new MyThread(counter);
-        MyThread t2 = new MyThread(counter);
+        MyThread T1 = new MyThread(counter);
+        MyThread T2 = new MyThread(counter);
 
-        t1.start();
-        t2.start();
+        T1.start();
+        T2.start();
 
-        t1.join();
-        t2.join();
+        T1.join();
+        T2.join();
         System.out.println(counter.GetCount());
     }
 }
@@ -34,3 +34,4 @@ class Counter{
         return Count;
     }
 }
+
