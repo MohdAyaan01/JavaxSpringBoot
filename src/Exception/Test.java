@@ -44,7 +44,7 @@ public class Test {
     }
 }
 */
-
+/*
 public class Test {
     public static void main(String[] args){
     int[] n = {10,200,30,40};
@@ -65,5 +65,60 @@ public class Test {
             System.out.println("Arithmetic Exception:(");
             return -1;
         }
+    }
+}*/
+/*
+public class Test {
+    public static void main(String[] args) {
+     try{
+         Level1();
+     }catch (Exception e) {
+         System.out.println(e);
+     }
+    }
+    public static void Level3() {
+        int[] Array = new int[5];
+        Array[5] = 10;
+    }
+    public static void Level2() {
+        Level3();
+    }
+    public static void Level1() {
+        Level2();
+    }
+}*/
+
+//
+//import java.io.FileNotFoundException;
+//import java.io.FileReader;
+//
+//public class Test {
+//    public static void main(String[] args)throws FileNotFoundException {//throws FileNotFoundException
+//        /*try{
+//            FileReader fileReader = new FileReader("a.txt");
+//        }catch (Exception e){
+//        }*/
+//        Method2();
+//        System.out.println("Hello");
+//    }
+//    public static void Method2()throws FileNotFoundException{
+//        Method1();
+//    }
+//    public static void Method1() throws FileNotFoundException {
+//        try {
+//            FileReader fileReader = new FileReader("a.txt");
+//        }catch (FileNotFoundException e){
+//            System.out.println("File Not Found");
+//            throw new FileNotFoundException();
+//        }
+//    }
+//}
+
+public class Test {
+    public static void main(String[] args){
+
+    }
+    public static void Method1(){
+
     }
 }
