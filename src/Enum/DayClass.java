@@ -1,5 +1,17 @@
 package Enum;
+//
+//public class DayClass {
+//    public static final String SUNDAY = "SUNDAY";
+//    public static final String MONDAY = "MONDAY";
+//    public static final String TUESDAY = "TUESDAY";
+//    public static final String WEDNESDAY = "WEDNESDAY";
+//    public static final String THURSDAY = "THURSDAY";
+//    public static final String FRIDAY = "FRIDAY";
+//    public static final String SATURDAY = "SATURDAY";
+//
+//}
 
+// Today , THe Day Class is the old way with String
 public class DayClass {
     public static final String SUNDAY = "SUNDAY";
     public static final String MONDAY = "MONDAY";
@@ -8,5 +20,4 @@ public class DayClass {
     public static final String THURSDAY = "THURSDAY";
     public static final String FRIDAY = "FRIDAY";
     public static final String SATURDAY = "SATURDAY";
-
 }
