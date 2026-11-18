@@ -12,3 +12,7 @@ package Generics;
 //        return item;
 //    }
 //}
+public interface GenericContainer <T> {
+    void add(T item);
+    T get();
+}

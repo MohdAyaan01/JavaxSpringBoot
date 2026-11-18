@@ -31,7 +31,7 @@ package Enum;
 //    }
 //}
 
-
+/*
 public class Test {
     public enum MONTHS{
         JANUARY;
@@ -57,5 +57,21 @@ public class Test {
         };
         System.out.println(res);
         System.out.println(MONTHS.JANUARY);
+    }
+} */
+
+public class Test {
+    public static void main(String[] args){
+       Day day = Day.MONDAY;
+        String res = switch (day){
+           case MONDAY -> "M";
+           case SUNDAY -> "S";
+           case TUESDAY -> "Y";
+           case WEDNESDAY -> "W";
+           case THURSDAY -> "T";
+           case FRIDAY -> "F";
+           case SATURDAY -> "SA";
+        };
+        System.out.println(res);
     }
 }
