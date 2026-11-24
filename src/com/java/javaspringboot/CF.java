@@ -12,7 +12,7 @@ public class CF {
         ArrayList2.add(12);
         ArrayList.addAll(ArrayList2);
         System.out.println(ArrayList);
-        /*List<Integer> list = List.of(1,2,3,4);
+        /*CF.list<Integer> list = CF.list.of(1,2,3,4);
         //Hash --> Same Inp --> Same Output
         Set<Integer> set = new HashSet<>();
         set.add(1);
@@ -21,7 +21,7 @@ public class CF {
         set.contains(2);
         System.out.println(set);
         System.out.println(set);*/
-        //List<Integer> list = List.of(1,2,3,4);
+        //CF.list<Integer> list = CF.list.of(1,2,3,4);
         Set<Integer> set = new HashSet<>();
         set.add(1);
         set.add(2);
@@ -33,7 +33,7 @@ public class CF {
         //map.put(2,"Akdowd");
         //map.put(3,"Chitlrash");
         //System.out.println(map.get(2));
-        //List -> Arraylist & LinkedList
+        //CF.list -> Arraylist & LinkedList
         //Set -> Hashset & LinkedHashset
         //Map -> HashMap & LinkedHashMap
         Map<Integer,String> map = new HashMap<>();

@@ -113,12 +113,12 @@ import java.util.*;
 //
 // public class Test {
 //     public static void main(String[] args){
-//     List<? super Number> numbers = Arrays.asList(1,2,3);
+//     CF.list<? super Number> numbers = Arrays.asList(1,2,3);
 //     numbers.add(12);
 //     numbers.add(null);
 //     }
 //     //Upper Bound
-//     public static double sum(List<? extends Number> numbers){
+//     public static double sum(CF.list<? extends Number> numbers){
 //         double sum = 0;
 //         for(Number o : numbers){
 //             sum += o.doubleValue();
@@ -126,7 +126,7 @@ import java.util.*;
 //         return sum;
 //     }
 //     //Lower Bound
-//     public static void PrintNumbers(List<? super Integer> list){
+//     public static void PrintNumbers(CF.list<? super Integer> list){
 //         for(Object obj : list){
 //             System.out.println(obj);
 //         }
