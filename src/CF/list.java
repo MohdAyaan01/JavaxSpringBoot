@@ -2,7 +2,7 @@ package CF;
 
 import javax.swing.*;
 import java.util.*;
-
+//
 //class StringLengthComparator implements Comparator<String>{
 //    @Override
 //    public int compare(String s1, String s2){
@@ -16,9 +16,9 @@ import java.util.*;
 //        return o1-o2;
 //    }
 //}
-
+//
 //public class list {
-  //  public static void main(String[] args){
+//  public static void main(String[] args){
       //  ArrayList<Integer> list = new ArrayList<>();
 //        list.add(1);
 //        list.add(2);
@@ -73,54 +73,54 @@ import java.util.*;
 //        Object[] array =list.toArray();
 //        list.toArray(new Integer[0]);
 
-//        list.sort(new MyComparator());
-//        System.out.println(list);
-        //List<String> Words = Arrays.asList("Banana","Apple","Date");
-        //Words.sort(new StringLengthComparator());
+        //list.sort(new MyComparator());
+        //System.out.println(list);
+//        List<String> Words = Arrays.asList("Banana","Apple","Date");
+//        Words.sort(new StringLengthComparator());
 //        Words.sort((a,b)-> b.length() - a.length());
 //        System.out.println(Words);
-  //  }
+//
+//    }
+//
+//class Student {
+//    private String name;
+//    private double gpa;
+//
+//    public Student(String name, double gpa) {
+//        this.name = name;
+//        this.gpa = gpa;
+//    }
+//
+//    public String GetName() {
+//        return name;
+//    }
+//
+//    public double GetGpa() {
+//        return gpa;
+//    }
 //}
-
-class Student {
-    private String name;
-    private double gpa;
-
-    public Student(String name, double gpa) {
-        this.name = name;
-        this.gpa = gpa;
-    }
-
-    public String GetName() {
-        return name;
-    }
-
-    public double GetGpa() {
-        return gpa;
-    }
-}
-    public class list {
-        public static void main(String[] args) {
-            List<Student> students = new ArrayList<>();
-            students.add(new Student("Alice", 3.6));
-            students.add(new Student("Ali", 3.2));
-            students.add(new Student("ce", 3.4));
-            students.add(new Student("e", 3.8));
-            Comparator<Student> comparator = Comparator.comparing(Student::GetGpa).reversed().thenComparing(Student::GetName);
-            students.sort(comparator);
-            students.sort((a, b) ->{
-                if(b.GetGpa() - a.GetGpa() > 0){
-                    return 1;
-                }else if(b.GetGpa() - a.GetGpa() < 0){
-                    return -1;
-                }else{
-
-                    return a.GetName().compareTo(b.GetName());
-                }
-            });
-            for (Student s : students) {
-                System.out.println(s.GetName() + " " + s.GetGpa());
-            }
-            Collections.sort(students,comparator);
-        }
-    }
+//    public class list {
+//        public static void main(String[] args) {
+//            List<Student> students = new ArrayList<>();
+//            students.add(new Student("Alice", 3.6));
+//            students.add(new Student("Ali", 3.2));
+//            students.add(new Student("ce", 3.4));
+//            students.add(new Student("e", 3.8));
+//            Comparator<Student> comparator = Comparator.comparing(Student::GetGpa).reversed().thenComparing(Student::GetName);
+//            students.sort(comparator);
+//            students.sort((a, b) ->{
+//                if(b.GetGpa() - a.GetGpa() > 0){
+//                    return 1;
+//                }else if(b.GetGpa() - a.GetGpa() < 0){
+//                    return -1;
+//                }else{
+//
+//                    return a.GetName().compareTo(b.GetName());
+//                }
+//            });
+//            for (Student s : students) {
+//                System.out.println(s.GetName() + " " + s.GetGpa());
+//            }
+//            Collections.sort(students,comparator);
+//        }
+//    }
